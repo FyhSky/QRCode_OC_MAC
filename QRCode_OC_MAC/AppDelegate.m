@@ -7,16 +7,21 @@
 //
 
 #import "AppDelegate.h"
+#import "QRCodeGenerator.h"
 
 @interface AppDelegate ()
 
 @property (weak) IBOutlet NSWindow *window;
+@property (weak) IBOutlet NSImageView *qrcodeImageView;
+
 @end
 
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+    NSImage *image = [QRCodeGenerator qrImageForString:@"www.baidu.com" imageSize:200];
+    [self.qrcodeImageView setImage:image];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
