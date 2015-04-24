@@ -1,13 +1,13 @@
 //
 //  config.h
-//  PPS_COCOA_FRONTEND
+//  COCOA_FRONTEND
 //
 //  Created by Yinghao Feng on 3/27/15.
 //
 //
 
-#ifndef PPS_COCOA_FRONTEND_configure_h
-#define PPS_COCOA_FRONTEND_configure_h
+#ifndef COCOA_FRONTEND_configure_h
+#define COCOA_FRONTEND_configure_h
 
 #define __STATIC  static
 
